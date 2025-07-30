@@ -10,7 +10,7 @@ connectDB();
 const app=express();
 const allowedOrigins = [
     'http://localhost:5173',
-    'https://learning-tracker-client.onrender.com'
+    'https://learning-tracker-client1.onrender.com'
   ];
   
   app.use(cors({
