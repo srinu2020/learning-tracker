@@ -8,7 +8,10 @@ import goalRoutes from './routes/goalRoutes.js'
 dotenv.config();
 connectDB();
 const app=express();
-app.use(cors())
+app.use(cors({
+    origin: 'https://learning-tracker-client.onrender.com', // update later after frontend deploy
+    credentials: true
+  }));
 app.use(express.json())
 app.get('/test', (req, res) => {
     res.send('API is working ✅');
