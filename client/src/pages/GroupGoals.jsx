@@ -11,7 +11,7 @@ const GroupGoals = () => {
 
   const fetchGoals = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/api/goals/group/${groupId}`, {
+      const res = await axios.get(`https://learning-tracker-backend-t2b2.onrender.com/api/goals/group/${groupId}`, {
         headers: { Authorization: `Bearer ${user.token}` }
       });
       setGoals(res.data);
@@ -23,7 +23,7 @@ const GroupGoals = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/api/goals/add', {
+      await axios.post('https://learning-tracker-backend-t2b2.onrender.com/api/goals/add', {
         ...form,
         groupId
       }, {
