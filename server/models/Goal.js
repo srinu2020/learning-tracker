@@ -4,7 +4,11 @@ const goalSchema=new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref:'User',
         required:true
-    },title:{
+    },
+    group: {
+  type: mongoose.Schema.Types.ObjectId,
+  ref: 'Group'
+},title:{
         type:String,
         required:true
     },
