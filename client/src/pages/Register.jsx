@@ -8,6 +8,12 @@ const Register = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
 
+  //  useEffect(() => {
+  //   if (user) {
+  //     navigate('/groups'); // ⬅️ Redirect if logged in
+  //   }
+  // }, [user, navigate]);
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -16,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'https://learning-tracker-backend-t2b2.onrender.com/api/auth/register',
+        'http://localhost:8080/api/auth/register',
         form
       );
       login(response.data);

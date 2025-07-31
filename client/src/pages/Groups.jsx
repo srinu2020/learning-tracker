@@ -12,7 +12,7 @@ const Groups = () => {
 
   const fetchGroups = async () => {
     try {
-      const res = await axios.get('https://learning-tracker-backend-t2b2.onrender.com/api/groups/view', {
+      const res = await axios.get('http://localhost:8080/api/groups/view', {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
@@ -29,7 +29,7 @@ const Groups = () => {
     if (!groupName) return;
     try {
       await axios.post(
-        'https://learning-tracker-backend-t2b2.onrender.com/api/groups/join',
+        'http://localhost:8080/api/groups/join',
         { groupName },
         {
           headers: {

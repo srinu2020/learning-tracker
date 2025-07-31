@@ -8,11 +8,18 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  // useEffect(() => {
+  //   if (user) {
+  //     navigate('/groups'); // ⬅️ Redirect if logged in
+  //   }
+  // }, [user, navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://learning-tracker-backend-t2b2.onrender.com/api/auth/login', { email, password });
+      const res = await axios.post('http://localhost:8080/api/auth/login', { email, password });
+      console.log(res);
+      
       login(res.data);
       navigate('/groups');
     } catch (err) {
