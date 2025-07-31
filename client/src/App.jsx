@@ -3,6 +3,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Groups from './pages/Groups';
 import Goals from './pages/Goals';
+import GroupGoals from './pages/GroupGoals'; // ⬅️ Import the new component
 import ProtectedRoute from './components/ProtectedRoute';
 import Navbar from './components/Navbar';
 
@@ -13,11 +14,17 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        
         <Route path="/groups" element={
           <ProtectedRoute><Groups /></ProtectedRoute>
         } />
-        <Route path="/goals" element={
+        
+        {/* <Route path="/goals" element={
           <ProtectedRoute><Goals /></ProtectedRoute>
+        } /> */}
+        
+        <Route path="/groups/:groupId/goals" element={  // ⬅️ New dynamic route
+          <ProtectedRoute><GroupGoals /></ProtectedRoute>
         } />
       </Routes>
     </Router>
