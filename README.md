@@ -12,7 +12,7 @@ A minimal full stack web application that allows users to join learning groups a
 
 ## 🚀 Live URLs
 
-- **Frontend:** [https://learning-tracker-client.onrender.com](https://learning-tracker-client1.onrender.com)  
+- **Frontend:** [https://learning-tracker-client.onrender.com](https://learning-tracker-client.onrender.com)  
 - **Backend:** [https://learning-tracker-backend-t2b2.onrender.com](https://learning-tracker-backend-t2b2.onrender.com)
 
 ---
