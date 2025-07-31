@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Groups from './pages/Groups';
-import Goals from './pages/Goals';
 import GroupGoals from './pages/GroupGoals'; // ⬅️ Import the new component
 import ProtectedRoute from './components/ProtectedRoute';
 import Navbar from './components/Navbar';
