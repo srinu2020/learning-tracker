@@ -104,7 +104,19 @@ const API_BASE = 'http://localhost:8080' // or your deployed backend
 
 ## 📱 UI Screenshots
 
-> _(You can insert screenshots here using markdown or upload them if required in PDF)_
+## 📸 Screenshots
+
+### 🖥️ Register Page (Desktop)
+![Register Desktop](./assets/register.png)
+
+### 📱 Login Page (Mobile)
+![Login Mobile](./assets/login.png)
+
+### 📊 Group  Page
+![Group Goals](./assets/groups.png)
+### 📊 Goals  Page
+![ Goals](./assets/goals.png)
+
 
 ---
 
